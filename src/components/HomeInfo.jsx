@@ -22,14 +22,14 @@ const renderContent = {
     ),
     2: (
         <InfoBox
-            text = "Always looking to streamline and optimize"
+            text = "I'm always looking to streamline and optimize"
             link = "/about"
             btnText = "Learn More" 
         />
     ),
     3: (
         <InfoBox
-            text = "Many projects over the years. Curious to see what I've done?"
+            text = "I've worked on many projects over the years. Curious to see what I've done?"
             link = "/projects"
             btnText = "Visit portfolio" 
         />    
