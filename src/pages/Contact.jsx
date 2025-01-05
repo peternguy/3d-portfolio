@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 const Contact = () => {
   const [form, setForm] = useState({name: '', email: '', message: ''})
 
+  const [isLoading, setIsLoading] = useState(false);
   const handleChange = () => {};
   const handleFocus = () => {};
   const handleBlur = () => {};
@@ -61,6 +62,16 @@ const Contact = () => {
             >
             </textarea>
           </label>
+          <button
+            type="submit"
+            className="btn"
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            disabled={isLoading}
+          >
+            {isLoading ? 'Sending...' : 'Send Message'}
+          </button>
+
 
         </form>
       </div>
